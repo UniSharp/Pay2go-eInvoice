@@ -19,11 +19,17 @@ return [
     // 開立串接版本：固定 1.4
     'Version_Create' => '1.4',
 
+    // 觸發開立串接版本：固定 1.0
+    'Version_Touch_Create' => '1.0',
+
     // 作廢串接版本：固定 1.0
     'Version_Void' => '1.0',
 
     // 折讓串接版本：固定 1.3
     'Version_Allow' => '1.3',
+
+    // 觸發折讓串接版本：固定 1.0
+    'Version_Touch_Allow' => '1.0',
 
     // 查詢串接版本：固定 1.1
     'Version_Search' => '1.1',
@@ -58,6 +64,10 @@ return [
     'Url_Create' => 'https://inv.pay2go.com/API/invoice_issue',
     'Url_Create_Test' => 'https://cinv.pay2go.com/API/invoice_issue',
 
+    // 串接網址：觸發開立
+    'Url_Touch_Create' => 'https://inv.pay2go.com/API/invoice_touch_issue',
+    'Url_Touch_Create_Test' => 'https://cinv.pay2go.com/API/invoice_touch_issue',
+
     // 作廢
     'Url_Void' => 'https://inv.pay2go.com/API/invoice_invalid',
     'Url_Void_Test' => 'https://cinv.pay2go.com/API/invoice_invalid',
@@ -65,6 +75,10 @@ return [
     // 折讓
     'Url_Allow' => 'https://inv.pay2go.com/API/allowance_issue',
     'Url_Allow_Test' => 'https://cinv.pay2go.com/API/allowance_issue',
+
+    // 串接網址：觸發折讓
+    'Url_Touch_Allow' => 'https://inv.pay2go.com/API/allowance_touch_issue',
+    'Url_Touch_Allow_Test' => 'https://cinv.pay2go.com/API/allowance_touch_issue',
 
     // 查詢
     'Url_Search' => 'https://inv.pay2go.com/API/invoice_search',
