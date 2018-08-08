@@ -23,6 +23,15 @@ class Invoice
         return $this->pay2goInv->send();
     }
 
+    // 觸發開立
+    public function touchCreate($data)
+    {
+        $this->pay2goInv = new TouchCreateInvoice();
+        $this->pay2goInv->setData($data);
+
+        return $this->pay2goInv->send();
+    }
+
     // 作廢
     public function void($data)
     {
@@ -36,6 +45,15 @@ class Invoice
     public function allow($data)
     {
         $this->pay2goInv = new AllowInvoice();
+        $this->pay2goInv->setData($data);
+
+        return $this->pay2goInv->send();
+    }
+
+    // 觸發折讓
+    public function touchAllow($data)
+    {
+        $this->pay2goInv = new TouchAllowInvoice();
         $this->pay2goInv->setData($data);
 
         return $this->pay2goInv->send();
