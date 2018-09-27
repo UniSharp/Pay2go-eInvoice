@@ -117,7 +117,7 @@ class CreateInvoice extends Pay2GoInvoice
                         break;
 
                     case '2': // 智付寶載具
-                        $this->postData['CarrierNum'] = rawurlencode($data['buyer_email']);
+                        $this->postData['CarrierNum'] = rawurlencode($data['BuyerEmail']);
                         break;
 
                     default:
